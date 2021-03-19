@@ -920,6 +920,19 @@ let tampledge = document.getElementById('pledge1');
 let tampledge1 = document.getElementById('pledge2');
 let tampledge2 = document.getElementById('pledge3');
 
+for (const box of customCheckboxes) {
+  box.addEventListener('change', (event) => {
+      
+    if (event.target.checked) {
+      if ( document.body.clientWidth <= 850 ) {
+        document.getElementById('numbamboo').style.bottom = '0';
+        document.getElementById('numblack').style.bottom = '0';
+        document.getElementById('numMahogany').style.bottom = '0';
+      }
+    }
+  })
+}
+
 for (const box of customCheckboxes1) {
   box.addEventListener('change', (event) => {
       
